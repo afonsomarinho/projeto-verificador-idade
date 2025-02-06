@@ -4,8 +4,10 @@ const feminino = document.querySelector("input#sexo-feminino");
 const verificar = document.querySelector("button#verificar");
 const imagem = document.querySelector("img#imagem");
 const texto = document.querySelector("p#textoDetectador");
+const preenchaDados = document.querySelector("p#preenchaDados")
 
 function clicarNoBotao() {
+  preenchaDados.innerHTML = "";
   if (anoNascimento.value === "" || (!masculino.checked && !feminino.checked)) {
     alert("Por favor, preencha os dados acima.");
   } else {
